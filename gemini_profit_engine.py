@@ -1591,7 +1591,7 @@ class GeminiProfitCrystallizer:
   CRYSTALLIZATION COMPLETE
 {'='*72}
   Total Opportunities Found: {len(opportunities)}
-  Top Score: {opportunities[0].confidence * opportunities[0].contrarian_score:.2f if opportunities else 0}
+  Top Score: {(opportunities[0].confidence * opportunities[0].contrarian_score if opportunities else 0):.2f}
 {'='*72}
 """)
 
